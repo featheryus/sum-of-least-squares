@@ -115,7 +115,9 @@ int find_in_detail(unsigned int num, int sqrti, int index)
                 has_no_answer = 0;
                 break;
             }
-
+            if(i==j) {
+                break;
+            }
             answer_s[queue_index%sqrti].value = j;
             answer_s[queue_index%sqrti].index = index+1;
             answer_s[queue_index%sqrti].up = i;

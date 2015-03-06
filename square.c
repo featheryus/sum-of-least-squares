@@ -154,7 +154,7 @@ int find(unsigned int num)
     first.need_handle=num;
 
     enq(&first);
-        while(!isempty() && has_no_answer) {
+    while(!isempty() && has_no_answer) {
         t=deque(q);
         if(t->index > 1) {
             answer[t->index-1]=t->up;
